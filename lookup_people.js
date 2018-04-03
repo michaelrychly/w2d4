@@ -24,7 +24,6 @@ client.connect((err) => {
     result.rows.forEach(function(element) {
       console.log(` - ${i}: ${element.first_name} ${element.last_name}, born: ${element.birthdate.toISOString().slice(0,10)}`);
     });
-    //console.log(result.rows[0]); //output: 1
     client.end();
   });
 });
