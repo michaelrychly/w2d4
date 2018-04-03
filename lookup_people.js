@@ -10,6 +10,7 @@ const client = new pg.Client({
   port     : settings.port,
   ssl      : settings.ssl
 });
+
 client.connect((err) => {
   if (err) {
     return console.error("Connection Error", err);
